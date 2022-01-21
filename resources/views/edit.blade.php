@@ -12,7 +12,7 @@
         <form action="/places/update/{{$place->id}}" method="POST">
         @csrf
             <input type="text" name="name" placeholder="Nome" value="{{$place->name}}"><br><br>
-            <textarea name="text" placeholder="Descrição" >{{$place->description}}</textarea><br><br>
+            <input type="text" name="description" placeholder="Descrição" value="{{$place->description}}"><br><br>
             <input type="text" name="address" placeholder="Endereço" value="{{$place->address}}"><br><br>
             <button type="submit">Enviar</button>
         </form>
