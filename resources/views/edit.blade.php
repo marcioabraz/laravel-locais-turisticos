@@ -11,9 +11,9 @@
     <a href="/places/delete/{{$place->id}}">Deletar</a>
         <form action="/places/update/{{$place->id}}" method="POST">
         @csrf
-            <input type="name" name="name" placeholder="Nome" value="{{$place->name}}"><br><br>
-            <textarea name="description" placeholder="Descrição" >{{$place->description}}</textarea><br><br>
-            <input type="name" name="address" placeholder="Endereço" value="{{$place->address}}"><br><br>
+            <input type="text" name="name" placeholder="Nome" value="{{$place->name}}"><br><br>
+            <textarea name="text" placeholder="Descrição" >{{$place->description}}</textarea><br><br>
+            <input type="text" name="address" placeholder="Endereço" value="{{$place->address}}"><br><br>
             <button type="submit">Enviar</button>
         </form>
     </h1>
